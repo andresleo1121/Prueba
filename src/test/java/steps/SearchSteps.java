@@ -10,6 +10,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import objects.LoginPage;
 
+/**
+ * Clase donde estan todos los paso a paso de los test, se conecta con los features
+ * @author MSI
+ *
+ */
+
 public class SearchSteps {
 	
 	WebDriver driver;

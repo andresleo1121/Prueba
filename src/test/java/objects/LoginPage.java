@@ -4,7 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+/**
+ * Esta clase se encuentra la "logica" del proyecto, esta ordenado que metodos cambiar si 
+ * en algun momento falla el proyecto 
+ * @author ANDRES PINEDA
+ *
+ */
+
 public class LoginPage {
+	
+	
 	
 	WebDriver driver;
 	
@@ -35,6 +44,8 @@ public class LoginPage {
 		this.driver=driver;
 	}
 	
+	// Metodo para entrar a la pagina web
+	
 	public void enterWeb() throws InterruptedException {
 		
 		System.setProperty("webdriver.gecko.driver","Drivers/geckodriver.exe");
@@ -44,10 +55,11 @@ public class LoginPage {
 		Thread.sleep(1000);
 		
 		driver.findElement(closevent).click();
-		//Thread.sleep(10000);
-		//driver.findElement(categories1).click();
+		
 		
 	}
+	
+	//Metodo login
 	
 	public void enterLogin()
 	{
@@ -58,6 +70,8 @@ public class LoginPage {
 		
 	}
 
+	//Metodo Seleccionar Streaming
+	
 	public void clickStreaming() throws InterruptedException
 	{
 		Thread.sleep(10000);
@@ -67,6 +81,8 @@ public class LoginPage {
 		driver.findElement(streaming).click();		
 		
 	}
+	
+	//Metodo Seleccionar Precio
 	
 	public void selectPrice() throws InterruptedException
 	{
@@ -78,6 +94,8 @@ public class LoginPage {
 		
 	}
 	
+	//Metodo seleccionar categorias  tv
+	
 	public void clickCategoriesTv() throws InterruptedException
 	{
 		Thread.sleep(10000);
@@ -87,6 +105,8 @@ public class LoginPage {
 		driver.findElement(tv).click();		
 		
 	}
+	
+	//Metodo para filtrar 
 	
 	public void clickFilterBrand() throws InterruptedException
 	{
@@ -101,6 +121,8 @@ public class LoginPage {
 		
 		
 	}
+	
+	//Metodo para seleccionar producto
 	
 	public void clickProduct() throws InterruptedException
 	{
